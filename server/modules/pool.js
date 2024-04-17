@@ -4,7 +4,7 @@ const Pool = pg.Pool;
 
 
 const pool = new Pool({
-  database: 'groceries', // 👈 CHANGE THIS!
+  database: 'CRUD-Grocery-List', // 👈 CHANGE THIS!
   host: 'localhost',
   port: 5432,
 });

@@ -39,3 +39,6 @@ function renderDOM(data){
         `;
     }
 }
+
+getGroceries();
+renderDOM();
