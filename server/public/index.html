@@ -13,21 +13,42 @@
     <header>
       <h1>My Grocery List</h1>
     </header>
-    <div id = tableLocation>
+    <div id="budgetForm">
+      <h2>Budget</h2>
+      <form>
+        <label>What is your budget? </label>
+        <input id="budgetInput" placeholder="budget" type="number" />
+        <button id="submitBudgetBtn" onclick="enterBudget()">Enter Budget</button>
+      </form>
+    </div>
+    <div id="itemForm">
+      <h2> Add an item</h2>
+      <form>
+        <input id = "itemInput"
+        placeholder ="item"
+        type = "text">
+        <input id = "quantityInput"
+        placeholder ="quantity"
+        type = "number">
+        <input id = "unitPriceInput"
+        placeholder="unit price"
+        type = "number">
+        <button id="addItemBtn" onclick="addItem()">Add Item</button>
+      </form>
+    </div>
+    <div id="tableLocation">
       <table>
         <thead>
           <tr>
             <th>Item</th>
-            <th>Quantity</th>
             <th>Unit Price</th>
+            <th>Quantity</th>
             <th>In the Cart?</th>
             <th>Extended Price</th>
             <th>Running total</th>
           </tr>
         </thead>
-        <tbody id =tableBodylocation>
-
-        </tbody>
+        <tbody id="tableBodylocation"></tbody>
       </table>
     </div>
   </body>
