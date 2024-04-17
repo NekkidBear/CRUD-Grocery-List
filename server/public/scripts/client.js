@@ -1,5 +1,6 @@
 console.log("👋🌍");
 
+let budget = 0;
 /** this function gets data from the server */
 function getGroceries() {
   axios({
@@ -14,7 +15,36 @@ function getGroceries() {
       console.log("There was an error retrieving your list. Error: ", error);
     });
 }
+/** end getGroceries */
 
+/** This function stores the budget */
+function enterBudget() {
+    let budgetInput = document.getElementById("budgetInput");
+    budget = budgetInput.value;
+
+}
+/** end endterBudget() */
+
+/** this function adds a new item to the list */
+function addItem(){
+  //TODO implement add item with axios call
+}
+/** end addItem */
+
+//**this function deletes an item based on the ID/*
+function deleteItem(id){
+  //todo implement delete
+}
+//** end delete item */
+
+/** this function updates the 'cart' status of an item based on it's ID */
+function checkMarkItem(id){
+  //todo implement update
+}
+/**end  */
+
+
+/** This function takes the tata retrieved and synchronizes the DOM */
 function renderDOM(data) {
   let groceryList = data;
   console.log("groceryList is:", groceryList);
@@ -59,5 +89,6 @@ function renderDOM(data) {
     }
   }
 }
+/** End renderDOM */
 
 getGroceries();
