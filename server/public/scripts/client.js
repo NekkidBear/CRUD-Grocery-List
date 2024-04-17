@@ -49,10 +49,10 @@ function renderDOM(data) {
             <td>${extendedPriceFormatted}</td>
             <td>${runningTotalFormatted}</td>
             <td>
-                <button id="checkMarkItem" onclick="toggleInCart(${row.id})">✅</button>
+                <button class="checkMarkItem" onclick="toggleInCart(${row.id})">✅</button>
             </td>
             <td>
-                <button id="deleteItem" onclick = "deleteItem(${row.id})">❌</button>
+                <button class="deleteItem" onclick = "deleteItem(${row.id})">❌</button>
             </td>
         </tr>
         `;
